@@ -1,0 +1,39 @@
+# Dependencies and builds
+node_modules/
+dist/
+build/
+.DS_Store
+*.log
+*.tsbuildinfo
+.cache/
+
+# Cloudflare & database dev state
+.wrangler/
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.db
+.dev.vars
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+
+# Strict open-core private airgap
+docs/
+tasks/
+SPEC-*
+.agents/
+.gemini/
+brain/
+scripts/push_public.sh
+scripts/git_pre_push_hook.sh
+scripts/install_hooks.sh
+scripts/menu_tui.py
+scripts/generate_daily_summary.ts
+scripts/generate_demo_gif.sh

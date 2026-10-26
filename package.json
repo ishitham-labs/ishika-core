@@ -1,0 +1,34 @@
+{
+  "name": "@ishika/core",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Open Core WebRTC tele-pathology streaming and microscope stage control framework",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "typecheck": "tsc --noEmit",
+    "test": "node scripts/run_tests.js",
+    "test:webrtc": "node scripts/test_webrtc.js --cli",
+    "test:webrtc:ui": "node scripts/test_webrtc.js",
+    "test:two-browser": "node scripts/test_two_browsers.js",
+    "test:two-browser:headless": "node scripts/test_two_browsers.js --headless",
+    "test:two-browser:cloudflare": "node scripts/test_two_browsers.js --cloudflare",
+    "test:two-browser:cloudflare:headless": "node scripts/test_two_browsers.js --cloudflare --headless",
+    "signaling": "node scripts/signaling_server.js",
+    "deploy:worker": "cd services/signaling-worker && npx wrangler deploy"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "typescript": "^5.7.0",
+    "vite": "^6.0.0"
+  }
+}

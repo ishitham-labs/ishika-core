@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@ishika/controls": ["packages/controls/src/index.ts"],
+      "@ishika/streaming": ["packages/streaming/src/index.ts"],
+      "@ishika/vision": ["packages/vision/src/index.ts"],
+      "@ishika/simulator": ["packages/simulator/src/index.ts"]
+    }
+  },
+  "include": ["packages", "apps"]
+}

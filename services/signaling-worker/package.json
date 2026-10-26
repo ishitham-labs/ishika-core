@@ -1,0 +1,17 @@
+{
+  "name": "@ishika/signaling-worker",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Cloudflare Worker zero-cost WebRTC signaling service for Ishika",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240925.0",
+    "typescript": "^5.7.0",
+    "wrangler": "^3.80.0"
+  }
+}
